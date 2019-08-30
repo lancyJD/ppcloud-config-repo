@@ -1,35 +1,35 @@
-spring:
-  http:
-    encoding:
-      charset: UTF-8
-      force: true
-      enabled: true
-    multipart:
-      enabled: true
-      max-request-size: 50MB
-      max-file-size: 50MB
+#spring:
+#  http:
+#    encoding:
+#      charset: UTF-8
+#      force: true
+#      enabled: true
+#    multipart:
+#      enabled: true
+#      max-request-size: 50MB
+#      max-file-size: 50MB
 
-security:
-  oauth2:
-    client:
-      clientId: ppcloud-client-gateway
-      clientSecret: ppcloudClientSecret
-      access-token-uri: http://ppcloud-gateway:7979/uac/oauth/token
-      user-authorization-uri: http://ppcloud-gateway:7979/uac/oauth/authorize
-    resource:
-      user-info-uri: http://ppcloud-gateway:7979/uac/user
-      prefer-token-info: false
-      jwt:
-        key-uri: http://ppcloud-provider-uac:8000/oauth/token_key
+#security:
+#  oauth2:
+#    client:
+#      clientId: ppcloud-client-gateway
+#      clientSecret: ppcloudClientSecret
+#      access-token-uri: http://ppcloud-gateway:7979/uac/oauth/token
+#      user-authorization-uri: http://ppcloud-gateway:7979/uac/oauth/authorize
+#    resource:
+#      user-info-uri: http://ppcloud-gateway:7979/uac/user
+#      prefer-token-info: false
+#      jwt:
+#        key-uri: http://ppcloud-provider-uac:8000/oauth/token_key
 #
 #proxy:
 #  auth:
 #    routes:
 #      uac-route: oauth2
 #      mdc-route: oauth2
-
-paascloud:
-  enableSqlLogInterceptor: false
+#
+#paascloud:
+#  enableSqlLogInterceptor: false
 # swagger butler配置
 #swagger.butler:
 #  api-docs-path: v2/api-docs
