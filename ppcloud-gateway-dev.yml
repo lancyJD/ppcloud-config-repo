@@ -21,12 +21,12 @@ security:
       prefer-token-info: false
       jwt:
         key-uri: http://ppcloud-provider-uac:8000/oauth/token_key
-
-proxy:
-  auth:
-    routes:
-      uac-route: oauth2
-      mdc-route: oauth2
+#
+#proxy:
+#  auth:
+#    routes:
+#      uac-route: oauth2
+#      mdc-route: oauth2
 
 paascloud:
   enableSqlLogInterceptor: false
